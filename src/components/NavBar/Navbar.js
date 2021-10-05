@@ -8,26 +8,25 @@ const Navbar = () => {
       <div>
         <div className="miTienda text-center p-3">Mi Tienda</div>
 
-        <a class="nav-link text-center" href="#"> <CartWidget/> 0 </a> 
-
-        <ul class="nav justify-content-center bg-dark m-3 p-4">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre nosotros</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-              
+        <ul className="nav justify-content-center bg-light m-3 p-4">
+          <li className="nav-item">
+            <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Productos</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Sobre nosotros</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Contacto</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link text-center" href="#"> <CartWidget count={0}/></a> 
+          </li>   
         </ul>
+
+        
         
       </div>
     )

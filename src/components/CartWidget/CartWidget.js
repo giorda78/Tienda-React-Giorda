@@ -1,10 +1,11 @@
 import React from 'react'
 import logo from '../Img/carritoReact.png'
 
-const CartWidget = () => {
+const CartWidget = ({count}) => {
     return (
             <span>
-                <img width="60px" src={logo} alt="" />
+                <img width="35px" src={logo} alt="" />
+                <h2>{count}</h2>
             </span>
     )
 }
