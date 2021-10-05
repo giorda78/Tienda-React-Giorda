@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/giorda78/Tienda-React-Giorda.git/static/css/main.4344a75e.chunk.css",
+    "main.js": "/giorda78/Tienda-React-Giorda.git/static/js/main.a25857ec.chunk.js",
+    "main.js.map": "/giorda78/Tienda-React-Giorda.git/static/js/main.a25857ec.chunk.js.map",
+    "runtime-main.js": "/giorda78/Tienda-React-Giorda.git/static/js/runtime-main.6368c43e.js",
+    "runtime-main.js.map": "/giorda78/Tienda-React-Giorda.git/static/js/runtime-main.6368c43e.js.map",
+    "static/css/2.f2512455.chunk.css": "/giorda78/Tienda-React-Giorda.git/static/css/2.f2512455.chunk.css",
+    "static/js/2.88ec4118.chunk.js": "/giorda78/Tienda-React-Giorda.git/static/js/2.88ec4118.chunk.js",
+    "static/js/2.88ec4118.chunk.js.map": "/giorda78/Tienda-React-Giorda.git/static/js/2.88ec4118.chunk.js.map",
+    "static/js/3.9f019410.chunk.js": "/giorda78/Tienda-React-Giorda.git/static/js/3.9f019410.chunk.js",
+    "static/js/3.9f019410.chunk.js.map": "/giorda78/Tienda-React-Giorda.git/static/js/3.9f019410.chunk.js.map",
+    "index.html": "/giorda78/Tienda-React-Giorda.git/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/giorda78/Tienda-React-Giorda.git/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.4344a75e.chunk.css.map": "/giorda78/Tienda-React-Giorda.git/static/css/main.4344a75e.chunk.css.map",
+    "static/js/2.88ec4118.chunk.js.LICENSE.txt": "/giorda78/Tienda-React-Giorda.git/static/js/2.88ec4118.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6368c43e.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.88ec4118.chunk.js",
+    "static/css/main.4344a75e.chunk.css",
+    "static/js/main.a25857ec.chunk.js"
+  ]
+}
