@@ -8,16 +8,6 @@ const Main = () => {
         <div>
             <Navbar/>
             <ItemListContainer greetings="¡Bienvenido!"/>
-            <ItemCount
-            name="chori clasico"
-            image="https://pbs.twimg.com/media/ETHHMMgX0AUoHXR.jpg"
-            price={250}
-            stock={5}/>
-            <ItemCount
-            name="hamburguesa"
-            image="https://www.noticiasformosa.com.ar/wp-content/uploads/2021/06/Hamburguesas.jpg"
-            price={230}
-            stock={8}/>
             
         </div>
     )
