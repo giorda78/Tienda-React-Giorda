@@ -1,10 +1,11 @@
 export const ListaDeProductos = [
     {
         id: 1,
-        nombre: "Choripan",
-        precio: 150,
-        stock: 10,
-        imagen: "https://pbs.twimg.com/media/ETHHMMgX0AUoHXR.jpg",
+        nombre: "Pizza",
+        precio: 450,
+        stock: 6,
+        imagen: "https://elgourmet.s3.amazonaws.com/recetas/share/pizza_Mh3H4eanyBKEsStv1YclPWTf9OUqIi.png",
+        descripcion: "Pizza de 8 porciones, salsa de tomate, queso, oregano y aceitunas",
     },
     
     {
@@ -30,7 +31,19 @@ export const ListaDeProductos = [
         precio: 300,
         stock: 4,
         imagen: "https://cdn.recetas360.com/wp-content/uploads/2019/07/como-hacer-papas-fritas-de-mcdonals.jpg",
+        
     },
+
+    {
+
+        id: 5,
+        nombre: "Choripan",
+        precio: 150,
+        stock: 10,
+        imagen: "https://pbs.twimg.com/media/ETHHMMgX0AUoHXR.jpg",
+        
+    },
+
 
 
 

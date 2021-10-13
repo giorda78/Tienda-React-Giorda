@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
+import './Item.css'
 
 
 const Item = ({id, nombre, precio, stock, imagen}) => {
@@ -9,19 +10,17 @@ const Item = ({id, nombre, precio, stock, imagen}) => {
     };
 
     return (
-       
-            <div className="">
-                <div className="text-center card">
-                    <div className="card">
-                        <img className="card-img" src={imagen} width="300px" height="600px" alt="producto"/>
-                        <div className="">
-                            <h5 className="card-title">{nombre}</h5>
-                            <p className="card-text">${precio}</p>
-                            <ItemCount stock={stock} onAdd={onAdd} initial={1}/>                        
-                        </div>
-                    </div>
-                </div>
-            </div>    
+     
+    <div className="card-container">
+        <img src={imagen} alt={nombre} style={{width:"300px"}}/>
+        <div className="description text-center">
+            <h2 className="p-2">{nombre}</h2>
+             <h3>Precio: ${precio}</h3>
+            <ul>
+                <li><ItemCount stock={stock} onAdd={onAdd} initial={1}/></li>
+            </ul>
+        </div>
+    </div>
         
     )
 }

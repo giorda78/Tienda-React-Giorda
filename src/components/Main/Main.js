@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemCount from '../ItemCount/ItemCount'
+import ItemDetailContainer from '../ItemDetailContainer/ItemDetailContainer'
 import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import Navbar from '../NavBar/Navbar'
 
@@ -8,7 +8,7 @@ const Main = () => {
         <div>
             <Navbar/>
             <ItemListContainer greetings="¡Bienvenido!"/>
-            
+            <ItemDetailContainer id={1}/>
         </div>
     )
 }

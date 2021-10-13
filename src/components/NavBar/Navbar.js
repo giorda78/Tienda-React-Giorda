@@ -6,7 +6,7 @@ import './Navbar.css'
 const Navbar = () => {
     return (
       <div>
-        <div className="miTienda text-center p-3">Mi Tienda</div>
+        <div className="miTienda text-center p-3">La Chacra, muebles de campo</div>
 
         <ul className="nav justify-content-center bg-light m-3 p-4">
           <li className="nav-item">

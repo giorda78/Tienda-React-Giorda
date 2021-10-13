@@ -27,29 +27,32 @@ const Itemlist = () => {
 
     return (
         <div>
-            {
-            productos.length ? (
-                <>
                 {
-                    productos.map((producto) => {
-                        return (
-                            <div key={producto.id}>
-                                <Item     
-                                    id={producto.id}                           
-                                    nombre={producto.nombre}
-                                    precio={producto.precio}
-                                    stock={producto.stock}
-                                    imagen={producto.imagen}
-                                />
-                            </div>
-                        );
-                    })
-                }
-                </>            
-        ) : (
-            <p className="text-center">Loading</p>
-        )
-        }
+                productos.length ? (
+                            <>
+                            {
+                                productos.map((producto) => {
+                                    return (
+                                        <div key={producto.id}>
+                                            <Item     
+                                                id={producto.id}                           
+                                                nombre={producto.nombre}
+                                                precio={producto.precio}
+                                                stock={producto.stock}
+                                                imagen={producto.imagen}
+                                            />
+                                        </div>
+                                    );
+                                })
+                            }
+                            </>            
+                        ) : 
+                    (
+
+                    <p className="text-center">Loading</p>
+
+                )
+            }
         </div>
     )
 }
