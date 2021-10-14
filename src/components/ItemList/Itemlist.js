@@ -49,7 +49,7 @@ const Itemlist = () => {
                         ) : 
                     (
 
-                    <p className="text-center">Loading</p>
+                    <h2 className="text-center">Cargando productos :)</h2>
 
                 )
             }

@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 
+import './ItemCount.css'
+
 const Item = ({stock, initial, onAdd}) => {
 
     // const onAdd = () => {
@@ -29,11 +31,11 @@ const Item = ({stock, initial, onAdd}) => {
         <div>
             <div>
                  
-                <button className="btn btn-success m-1" onClick={()=>addClick(+1)} disabled={clicks === stock ? true : null}>Agregar</button>
+                <button className="btn btn-success m-1 p-2 botones" onClick={()=>addClick(+1)} disabled={clicks === stock ? true : null}>+</button>
                 <span>{clicks}</span> 
-                <button className="btn btn-danger m-2" onClick={()=>addClick(-1)} disabled={clicks === initial ? true : null}>Restar</button>      
+                <button className="btn btn-danger m-2 p-2 botones" onClick={()=>addClick(-1)} disabled={clicks === initial ? true : null}>-</button>      
             </div>
-                <button className="btn btn-primary" onClick={()=>onAdd(clicks)} disabled={stock === 0 ? true : null}>Agregar al carrito</button>
+                <button className="btn btn-primary botones" onClick={()=>onAdd(clicks)} disabled={stock === 0 ? true : null}>Agregar al carrito</button>
         </div>
     );
 };
