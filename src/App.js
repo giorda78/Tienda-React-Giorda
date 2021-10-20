@@ -21,7 +21,7 @@ function App() {
               <ItemListContainer/>
             </Route>
 
-            <Route exact path="/productos/:id">
+            <Route exact path="/productos/:nombre">
               <DetailPage/>
             </Route>
 

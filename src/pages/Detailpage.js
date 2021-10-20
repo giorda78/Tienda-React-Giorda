@@ -5,11 +5,11 @@ import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailCon
 
 
 const DetailPage = () => {
-  const { id } = useParams();
+  const { nombre } = useParams();
 
   return (
-    <main>
-      <ItemDetailContainer id= {id} />
+    <main className="text-center">
+      <ItemDetailContainer nombre= {nombre} />
     </main>
   );
 };

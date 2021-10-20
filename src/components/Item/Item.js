@@ -17,7 +17,7 @@ const Item = ({id, nombre, precio, stock, imagen}) => {
         <div className="card-container">
             <img src={imagen} alt={nombre} style={{width:"300px"}}/>
             <div className="description text-center">
-                <Link to={`/productos/${id}`}>  <h2 className="p-2">{nombre}</h2>   </Link>
+                <Link to={`/productos/${nombre}`}>  <button className="p-4 m-2 btn btn-success">Comprar {nombre}</button>   </Link>
                 <h3>Precio: ${precio}</h3>
                 <ul>
                     <li><ItemCount stock={stock} onAdd={onAdd} initial={1}/></li>

@@ -14,6 +14,8 @@ export const ListaDeProductos = [
         precio: 100,
         stock: 20,
         imagen: "https://www.noticiasformosa.com.ar/wp-content/uploads/2021/06/Hamburguesas.jpg",
+        descripcion: "Hamburguesa de 180gr, con tomate, lechuga, quedo chedar y mayonesa",
+
     },
 
     {
@@ -22,6 +24,8 @@ export const ListaDeProductos = [
         precio: 200,
         stock: 5,
         imagen: "https://media.diariopopular.com.ar/p/ec0a4238d34cfe3db4dd2859d6c87e28/adjuntos/143/imagenes/007/873/0007873047/panchojpg.jpg",
+        descripcion: "Pancho con 2 aderezos a eleccion",
+
         
     },
 
@@ -31,6 +35,8 @@ export const ListaDeProductos = [
         precio: 300,
         stock: 4,
         imagen: "https://cdn.recetas360.com/wp-content/uploads/2019/07/como-hacer-papas-fritas-de-mcdonals.jpg",
+        descripcion: "Porcion 200gr de papas fritas",
+
         
     },
 
@@ -41,6 +47,8 @@ export const ListaDeProductos = [
         precio: 150,
         stock: 10,
         imagen: "https://pbs.twimg.com/media/ETHHMMgX0AUoHXR.jpg",
+        descripcion: "Choripan con 3 aderezos a eleccion",
+
         
     },
 
