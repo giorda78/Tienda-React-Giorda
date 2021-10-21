@@ -1,4 +1,6 @@
 import React from 'react';
+import './Home.css';
+
 
 import ItemListContainer from '../components/ItemListContainer/ItemListContainer';
 
@@ -6,8 +8,9 @@ import ItemListContainer from '../components/ItemListContainer/ItemListContainer
 
 const Home = () => {
   return (
-    <main>
+    <main className="fondo">
         <ItemListContainer/>
+        
     </main>
   );
 };

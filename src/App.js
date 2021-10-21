@@ -7,32 +7,39 @@ import Navbar from './components/NavBar/Navbar';
 import Home from './pages/Home';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import DetailPage from './pages/Detailpage';
+import CartContextProvider from '../src/components/CartContext/CartContext';
+import Cart from './components/Cart/Cart';
+
 
 function App() {
   return (
-    <div>
-        <Router>
+    <CartContextProvider>
+          <Router>
 
-          <Navbar/>
-          
-          <Switch>
+            <Navbar/>
             
-            <Route exact path="/productos">
-              <ItemListContainer/>
-            </Route>
+            <Switch>
+              
+              <Route exact path="/productos">
+                <ItemListContainer/>
+              </Route>
 
-            <Route exact path="/productos/:nombre">
-              <DetailPage/>
-            </Route>
+              <Route exact path="/productos/:nombre">
+                <DetailPage/>
+              </Route>
 
-            <Route path="/">
-              <Home/>
-            </Route>
+              <Route exact path="/cart">
+                <Cart/>
+              </Route>
 
-          </Switch>
+              <Route path="/">
+                <Home/>
+              </Route>
 
-        </Router>
-    </div>
+            </Switch>
+
+          </Router>
+    </CartContextProvider>
   );
 }
 

@@ -9,7 +9,7 @@ const DetailPage = () => {
 
   return (
     <main className="text-center">
-      <ItemDetailContainer nombre= {nombre} />
+      <ItemDetailContainer nombre= {nombre}/>
     </main>
   );
 };

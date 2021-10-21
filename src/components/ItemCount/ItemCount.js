@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { useCartContext } from '../CartContext/CartContext';
 
 import './ItemCount.css'
 
@@ -9,6 +10,9 @@ const Item = ({stock, initial, onAdd}) => {
     const addClick = (numero) => {
         setClicks(clicks + numero);
     };    
+
+    const {addItem} = useCartContext()
+
 
     const [show, setShow]= useState (true)
 

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+
 import CartWidget from '../CartWidget/CartWidget'
 import './Navbar.css'
 
@@ -6,21 +8,22 @@ import './Navbar.css'
 const Navbar = () => {
     return (
       <div>
-        <div className="miTienda text-center p-3">Comida Rapida</div>
-
+        <Link to={`/`}> <div className="miTienda text-center p-3">Comida Rapida</div></Link>
+       
         <ul className="nav justify-content-center bg-light m-3 p-4">
+          
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+          <Link to={`/`}><a className="nav-link active" aria-current="page" href="#">Inicio</a></Link>  
           </li>
+
           <li className="nav-item">
-            <a className="nav-link" href="#">Productos</a>
+              <Link to={`/productos`}><a className="nav-link" href="#">Productos</a></Link>      
           </li>
+
           <li className="nav-item">
-            <a className="nav-link" href="#">Contacto</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link text-center" href="#"> <CartWidget count={0}/></a> 
+          <Link to={`/cart`}> <a className="nav-link text-center" href="#"><CartWidget count={0}/></a></Link>          
           </li>   
+
         </ul>
 
         
