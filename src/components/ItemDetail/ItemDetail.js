@@ -12,10 +12,12 @@ const ItemDetail = ({item}) => {
   console.log(clicks);
   agregarItem({item:item, cantidad:clicks});
     alert(`Agregaste ${clicks} ${item.nombre} al carrito`);
+    setShow(false);
 };
 
-
 const [show, setShow]= useState (true)
+
+
     return (
       <div className="card text-center d-flex" style={{width:"18rem"}}>
           <img className="card-img-top" src={item.imagen} alt="producto"/>
@@ -24,10 +26,10 @@ const [show, setShow]= useState (true)
               <p className="card-text botones">${item.precio}</p>
               <p className="card-text botones">{item.descripcion}</p>
 
-              {show?<ItemCount stock={item.stock} onAdd={onAdd} initial={1}/>:null}
-              
-              <Link to= {`/cart`} ><button className="btn btn-secondary botones p-3 m-3" onClick={()=>setShow(!show)}>FINALIZAR COMPRA</button></Link>     
-
+              {show?
+              (<ItemCount mostrar= {show} setMostrar={setShow} item={item} onAdd={onAdd} initial={1}/>)
+              : ( <Link to= {`/cart`} ><button className="btn btn-secondary botones p-3 m-3" onClick={()=>setShow(!show)}>FINALIZAR COMPRA</button></Link>)}
+        
             </div>
       </div> 
     );

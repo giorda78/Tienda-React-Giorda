@@ -7,6 +7,7 @@ const CartWidget = ({count}) => {
                 
                 <img width="35px" src={logo} alt="" />
                 <p>carrito</p>
+                <p> {count} </p>
             </span>
     )
 }

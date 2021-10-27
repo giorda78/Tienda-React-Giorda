@@ -16,7 +16,7 @@ function CartContextProvider({children}){
         setCartList([])
     }
 
-    const addItem = (newItem, newQuantity) => {
+    const addItem = (newItem, newQuantity, mostrar, setMostrar) => {
         const prevCartItem = cartList.find((e) => e.item.id === newItem.id);
         let newCart;
         let qty;
@@ -28,6 +28,7 @@ function CartContextProvider({children}){
             qty = newQuantity
         }
         setCartList ([...newCart, { item: newItem, quantity: qty }]);
+        setMostrar(!mostrar);
     };
 
     console.log(cartList);

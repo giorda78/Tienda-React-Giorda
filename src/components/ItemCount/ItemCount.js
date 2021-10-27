@@ -3,7 +3,7 @@ import { useCartContext } from '../CartContext/CartContext';
 
 import './ItemCount.css'
 
-const Item = ({stock, initial, onAdd}) => {
+const Item = ({item, initial, onAdd, mostrar , setMostrar}) => {
 
     const [clicks, setClicks] = useState(initial);
 
@@ -19,14 +19,14 @@ const Item = ({stock, initial, onAdd}) => {
     return (        
         <div>  
             <div>
-                <button className="btn btn-success m-1 p-2 botones" onClick={()=>addClick(+1)} disabled={clicks === stock ? true : null}>+</button>
+                <button className="btn btn-success m-1 p-2 botones" onClick={()=>addClick(+1)} disabled={clicks === item.stock ? true : null}>+</button>
                 <span className="botones" >{clicks}</span> 
                 <button className="btn btn-danger m-2 p-2 botones" onClick={()=>addClick(-1)} disabled={clicks === initial ? true : null}>-</button>    
             </div>
 
             {show?
             <div> 
-                <button className="btn btn-primary botones" onClick={()=>onAdd(clicks)} disabled={stock === 0 ? true : null}>Agregar al carrito</button>
+                <button className="btn btn-primary botones" onClick={()=>addItem(item, clicks, mostrar, setMostrar)} disabled={item.stock === 0 ? true : null}>Agregar al carrito</button>
             </div>
             :null}   
     
