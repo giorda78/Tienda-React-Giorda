@@ -30,14 +30,27 @@ function CartContextProvider({children}){
         setCartList ([...newCart, { item: newItem, quantity: qty }]);
         setMostrar(!mostrar);
     };
+ 
+    // const removerItem = (id) =>{
+    //     let filtrarCarrito = cartList.filter((item) => {
+    //         return item["id"] !== id;
+    //     });
+    //     setCartList(filtrarCarrito);
+    //     return filtrarCarrito;
+    // };
 
-    console.log(cartList);
+    const removeItem = (itemId) => {
+        const newCarrito = cartList.filter ((e) => e.item.id !== itemId);
+        setCartList (newCarrito);
+    };
+    
     return(
         <CartContext.Provider value= {{
             cartList,
             agregarItem,
             vaciarCarrito,
             addItem,
+            removeItem,
         }}>
             {children}
         </CartContext.Provider>
